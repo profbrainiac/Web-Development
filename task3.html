@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu {
+            width: 33.33%;
+        }
+        .content {
+            width: 66.66%;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #33b5e5;
+            color: #ffffff;
+        }
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>HW02 Task Three</h1>
+</div>
+
+<div class="clearfix">
+    <div class="column menu">
+        <ul>
+
+            <li onclick="f1()">Lorem Ipsem</li>
+            <li onclick="f2()">99 Bottles</li>
+            <li onclick="f3()">Last Thing</li>
+        </ul>
+    </div>
+
+    <div class="column content" id="target1">
+        <p>
+            In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the
+            textual elements of a graphic document or visual presentation. Replacing meaningful content with placeholder
+            text allows designers to design the form of the content before the content itself has been produced.
+        </p>
+
+        <p>
+            The lorem ipsum text is typically a scrambled section of De finibus bonorum et malorum, a 1st-century BC
+            Latin text by Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+        </p>
+
+        <p>
+            A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier,
+            when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information
+            Age in the mid-1980s by Aldus Corporation, which employed it in graphics and word-processing templates for
+            its desktop publishing program PageMaker.
+        </p>
+    </div>
+
+    <div class="column content" id="target2">
+        <p>
+            99 bottles of beer on the wall, 99 bottles of beer.
+        </p>
+
+        <p>
+            Take one down, pass it around, 98 bottles of beer on the wall.
+        </p>
+
+        <p>
+
+        </p>
+
+        <p>
+            98 bottles of beer on the wall, 98 bottles of beer.
+        </p>
+
+        <p>
+            Take one down, pass it around, 97 bottles of beer on the wall.
+        </p>
+
+        <p>
+
+        </p>
+
+        <p>
+            97 bottles of beer on the wall, 97 bottles of beer.
+        </p>
+
+        <p>
+            Take one down, pass it around, 96 bottles of beer on the wall.
+        </p>
+
+        <p>
+
+        </p>
+
+        <p>
+            96 bottles of beer on the wall, 96 bottles of beer.
+        </p>
+
+        <p>
+            Take one down, pass it around, 95 bottles of beer on the wall.
+        </p>
+    </div>
+
+    <div class="column content" id="target3">
+        <p>
+            This is the third thing.
+        </p>
+    </div>
+</div>
+
+<script>
+    function f1() {
+        var x = document.getElementById("target1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function f2() {
+        var x = document.getElementById("target2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function f3() {
+        var x = document.getElementById("target3");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
